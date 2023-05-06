@@ -4,7 +4,7 @@
   "description": "html-builder task for RSSchool",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "eslint . --ext .js",
+    "lint": "eslint . --ext .js --ignore-pattern \"03-files-in-folder/secret-folder/**\"",
     "1": "node 01-read-file",
     "2": "node 02-write-file",
     "3": "node 03-files-in-folder",
