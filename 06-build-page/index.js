@@ -49,7 +49,7 @@ async function addStyles() {
     if (fileName.isFile() === true && ext === '.css') {
       const readStream = fs.createReadStream(path.join(stylesPath, fileName.name));
 
-      readStream.on('data', data => writeStream.write(data));
+      readStream.on('data', data => writeStream.write(data + '\n'));
       readStream.on('error', error => console.log('Error', error.message));
     }
   }
